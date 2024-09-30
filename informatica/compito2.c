@@ -10,10 +10,10 @@ int main (){
             printf("Inserisci costolitro: ");
             scanf("%f",&costolitro);
                 importo=(litri*costolitro);
-                    scanf("L'importo da pagare vale: %.2f,importo");
+                printf("\n L'importo da pagare vale: %.2f",importo);
                         printf("Inserisci banconota: ");
                         scanf("%f",&banconota);
                             resto=(banconota-importo);
-                            scanf("Il resto vale: %.2f,resto");
+                            printf("Il resto vale: %.2f",resto);
 
 }
