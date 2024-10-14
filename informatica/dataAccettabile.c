@@ -29,20 +29,26 @@ int main(){
     if(mese>=1 && mese<=12){
         if(mese==2){
             if(giorno>=1 && giorno<=28+bisestile){
-                printf("\nLa data è accettabile");            
-            }
+                printf("\nLa data è accettabile");
+                 }
+            else
+            printf("\nNon è accettabile");           
+            
         }
     }
         else{
             if(mese==11 || mese==4 || mese==6 || mese==9){
                 if(giorno>=1 && giorno<=30){
-                    printf("\nLa data è accettabile");
-
-                }
+                    printf("\nLa data è accettabile");}
+                else
+                printf("\nNon è accettabile");
+                
                 else{
                     if(giorno>=1 && giorno<=31){
-                        printf("\nLa data è accettabile");
-                    }
+                        printf("\nLa data è accettabile");}
+                    else
+                    printf("\nNon è accettabile");
+                    
                 }
             }
         }
