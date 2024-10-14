@@ -96,6 +96,7 @@ if(anno2%100==0){
     else{
         printf("\nLa data non è accettabile");
     }
+    
 }
 
     
