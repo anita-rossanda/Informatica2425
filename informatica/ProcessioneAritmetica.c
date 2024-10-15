@@ -15,7 +15,4 @@ int main(){
         else
             printf("Non è in progressione aritmetica");
 
-
-
-
 }

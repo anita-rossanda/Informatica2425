@@ -10,6 +10,4 @@ int main(){
         else
             printf("Non è un triangolo");
         
-
-
 }

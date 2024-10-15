@@ -19,5 +19,4 @@ int main(){
             printf("Il primo orario viene dopo");
         else if(min2>min1)
             printf("Il secondo orario viene dopo");
-
 }
