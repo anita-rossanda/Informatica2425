@@ -13,8 +13,7 @@ int main(){
             n0=quoz%2; //in n0 abbiamo inserito il resto del bit meno significativo
             quoz=quoz/2; //abbiamo aggiornato il nuovo valore del quoziente
         }
-        else    
-            //stampa del numero binario
+        
         if(quoz!=0){
             n1=quoz%2; //in n1 abbiamo inserito il resto del bit meno significativo
             quoz=quoz/2; //abbiamo aggiornato il nuovo valore del quoziente
