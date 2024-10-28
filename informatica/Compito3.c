@@ -11,10 +11,10 @@ int main(){
     scanf("%d",&num);
 
     cifra1=num%10;
-    cifra2=num%100;
-    cifra3=num%1000;
+    cifra2=cifra1%10;
+    cifra3=cifra2%10;
         if(cifra1+cifra2>9){
-            if(cifra3+cifra2%3==0)
+            if(cifra3+cifra2+cifra1%3==0)
             printf("è divisibile per 3");
         else 
             printf("non è divisibile per 3");
