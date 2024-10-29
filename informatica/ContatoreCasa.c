@@ -5,11 +5,11 @@ Alla fine mostrare il numero di valori inseriti dall'utente (usare contatore).*/
 
 #include <stdio.h>
 int main(){
-    int num=0, somma=0, contatore=1;
+    int num=0, somma=0, contatore=;
     printf("Inserisci un numero: ");
     scanf("%a", &num);
     somma=num;
-        if(somma>100){
+        if(somma<100){
             printf("Hai superato la soglia")
         }
         else
