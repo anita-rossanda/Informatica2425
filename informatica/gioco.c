@@ -33,6 +33,5 @@ int main(){
     else{
         printf("scelta non valida");
     }
-
     return 0;
 }
