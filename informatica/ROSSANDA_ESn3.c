@@ -52,7 +52,13 @@ int main(){
                     printf("k%.2f",k);
                 break;
             case 4:
-            
+                if(n1%n2){
+                    printf("n1 è multiplo di n2");
+                }
+                if(n2%n1){
+                    printf("n2 è multiplo di n1")
+                }
+                
                 break;
                 
         }
