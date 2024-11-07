@@ -8,7 +8,7 @@ da 2 cifre e k compare 1 volta*/
 #include <stdio.h>
 int main(){
     
-    int n=0,q=0,r=0,k=0;
+    int n=0,q=0,r=0,k=0, contatore=0;
     printf("Inserisci un numero tra 0 e 9999: ");
     scanf("%d",&n);
 
@@ -17,6 +17,7 @@ int main(){
             q=n/10;
             r=n%10;
                 printf("La prima cifra vale: %d",&r);
+                if(r==k)
         }
         else if(n<100){
             q=n/10;

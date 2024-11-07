@@ -58,8 +58,9 @@ int main(){
                 if(n2%n1){
                     printf("n2 è multiplo di n1")
                 }
-                
                 break;
+            default:
+			    printf("\n HAI INSERITO UNA SCELTA NON VALIDA");
                 
         }
 
