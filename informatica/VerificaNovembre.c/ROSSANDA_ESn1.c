@@ -53,11 +53,10 @@ int main(){
             r=q/10;
                 printf("La quarta cifra vale: %d",&r);   
         }
-        else{
-            printf("non valido");
+       
         }
-
+    else
+            printf("non valido");
     }
 
         
-}
