@@ -10,6 +10,20 @@ int main(){
         if (c<1 || c>9)
             printf("Errore");
     }
-    else if()
+    if(c<n){
+        c=c+4;
+        else{
+        printf("non è multiplo");}
+    }
+    if(c<n){
+        c=c+4;
+        else{
+        printf("non è multiplo");}
+    }
+    if(c<n){
+        c=c+4;
+        else{
+        printf("non è multiplo");}
+    }
     
 }
