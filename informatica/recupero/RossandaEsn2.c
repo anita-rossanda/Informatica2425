@@ -7,14 +7,9 @@ int main(){
     scanf("%d%d", &n,&c);
     
     if (n<1 || n>20){
-        printf("Errore");
+        if (c<1 || c>9)
+            printf("Errore");
     }
-    if (c<1 || c>9){
-        printf("Errore");
-    }
-    if(n%c==0 && n<n){
-        	printf("\n%c è multiplo di %c", c, n);
-    }
-				
+    else if()
     
 }

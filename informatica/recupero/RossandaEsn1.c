@@ -2,11 +2,15 @@
 CHE GIACOMO HA 20 GIORNI PER CONSEGNARE IL LAVORO ASSEGNATO
 COMUNICARE LA DATA DI CONSEGNA.*/
 #include <stdio.h>
-#include
+#include <time.h>
+#include <stdlib.h>
 int main(){
     int g1=0,m1=0,anno1=0,bisestile1=0;
-    printf("Inserisci giorno mese e anno");
-    scanf("%d%d%d", &g1,&m1,&anno1);
+        srand(time(NULL));
+        g1=rand()%31;
+        m1=rand()%12;
+        anno1=rand()%2024;
+
         if(anno1<2000 || anno1>2024){
         printf("Errore");
         }
