@@ -1,8 +1,8 @@
 /*GENERATA UNA DATA TRA L’ANNO 2000 E L’ANNO 2024 AD OGGI E SAPENDO
 CHE GIACOMO HA 20 GIORNI PER CONSEGNARE IL LAVORO ASSEGNATO
 COMUNICARE LA DATA DI CONSEGNA.*/
-
 #include <stdio.h>
+#include
 int main(){
     int g1=0,m1=0,anno1=0,bisestile1=0;
     printf("Inserisci giorno mese e anno");
@@ -47,5 +47,4 @@ int main(){
         }
         else{
             printf("\nErrore");
-        } 
-}
+} 

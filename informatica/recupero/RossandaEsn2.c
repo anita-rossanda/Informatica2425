@@ -12,5 +12,9 @@ int main(){
     if (c<1 || c>9){
         printf("Errore");
     }
+    if(n%c==0 && n<n){
+        	printf("\n%c è multiplo di %c", c, n);
+    }
+				
     
 }
