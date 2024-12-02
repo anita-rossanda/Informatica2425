@@ -9,9 +9,9 @@ int main(){
 
     while(divisore<=num/2){
         if(num%divisore==0)
-            printf("è un divisore\n", divisore, num);
+            printf("%d è un divisore %d\t", divisore, num);
 
         divisore++;
     }
-
+    printf("1\t%d",num);
 }
