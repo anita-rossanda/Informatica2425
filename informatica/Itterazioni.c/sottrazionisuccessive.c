@@ -3,7 +3,7 @@ delle sottrazioni successive*/
 
 #include <stdio.h>
 int main(){
-    int num1, num2,num3, cnt=0, quoz=0;
+    int num1, num2,num3, cnt=1, quoz=0;
     do{
         printf("Inserisci il primo valore");
         scanf("%d",&num1);
