@@ -20,11 +20,11 @@ int main(){
         num1=num3;
     }
     quoz=num1;
-    while(quoz>num2){
+    while(quoz>=num2){
             quoz-=num2;
             cnt++;
     }
-    printf("risultato è%d",cnt);
+    printf("risultato è %d, resto %d",cnt,quoz);
     
 
 }
