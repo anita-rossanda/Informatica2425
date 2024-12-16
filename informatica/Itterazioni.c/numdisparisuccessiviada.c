@@ -10,6 +10,9 @@ int main(){
     do{
         printf("Inserisci a: ");
         scanf("%d", &a);
-    }while(a<0);
+    }while(a<=0);
 
+    for(int i=0; i<=0; i++){
+        
+    }
 }
