@@ -6,15 +6,16 @@ int main(){
     do{
         printf("Inserisci un numero: ");
         scanf("%d",&n);
-    }while(n<=0);
-
         num_q=n;
         cifra=num_q%10;
         num_q=num_q/10;
         somma+=cifra;
         printf("la somma vale: ");
         scanf("%d",&somma);
+    }while(n<=0);
+
         
+
     if(somma%3==0){
         printf("è multiplo di 3: ");
         scanf("%d",&somma);
