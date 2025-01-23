@@ -8,13 +8,13 @@ int main(){
         scanf("%d",&n);
     }while(n<=0);
 
-    num_q=n;
-    for(int i=0;i<=0; i++){
+        num_q=n;
         cifra=num_q%10;
         num_q=num_q/10;
         somma+=cifra;
         printf("la somma vale: ");
         scanf("%d",&somma);
+        
     if(somma%3==0){
         printf("è multiplo di 3: ");
         scanf("%d",&somma);
@@ -28,5 +28,5 @@ int main(){
         scanf("%d",&somma);
     }
     
-    }
+    
 }
