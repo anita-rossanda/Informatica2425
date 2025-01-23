@@ -1,4 +1,5 @@
-/*Dati N numeri in input (N è un numero scelto dall'utente maggiore di 2) determinare il valore più piccolo tra quelli incontrati, indicandone il numero d'ordine (cioè se era il primo numero inserito, il secondo o terzo e così via).*/
+/*Dati N numeri in input (N è un numero scelto dall'utente maggiore di 2) determinare il valore più piccolo tra quelli incontrati,
+indicandone il numero d'ordine (cioè se era il primo numero inserito, il secondo o terzo e così via).*/
 
 #include <stdio.h>
 
@@ -14,7 +15,7 @@ int main(){
     }while(N<2);
 
     for(int i=0; i<N; i++){
-        printf("inserisci un valore :) : ");
+        printf("inserisci un valore: ");
         scanf("%d", &val);
         if(i==0 || val<min){
             min=val;

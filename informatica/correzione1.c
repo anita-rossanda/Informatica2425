@@ -38,6 +38,6 @@ int main(){
          printf("\n inserisci un nuovo valore ");
          scanf("%d",&num);
     }
-     printf("\nsono stati inseriti %d valori,cnt");
+     printf("\nsono stati inseriti %d valori",cnt);
 
 }

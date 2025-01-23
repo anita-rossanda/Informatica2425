@@ -6,15 +6,7 @@ conta il numero di aggiunte in un altro registro.
 • Se DX è maggiore di 255 scambia la parte alta con la parte bassa e inserisci
 in un commento a fine listato il valore rappresentato da DX. (; DX→ ??)
 
-.model small
-.stack 200h
-.data
-.code
 
-MAIN:
-.startup
-mov ax, @data
-mov ds, ax
 
 mov dx, 03h
 mov bx, 08h
