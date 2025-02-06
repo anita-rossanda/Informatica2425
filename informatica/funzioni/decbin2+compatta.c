@@ -10,7 +10,7 @@ int main(){
         scanf("%d",&n);
     }while(n<=0);
     conv=converti(n); //restituisco il valore funale qui
-    printf("%ld\n");
+    printf("%ld\n",conv);
 }
 long converti(int _n){
     int quoz,resto,cnt=0, _conv=0; //cnt=esponente
@@ -18,8 +18,9 @@ long converti(int _n){
     while(quoz!=0){
         resto=quoz%2;
         quoz=quoz/2;
-        _conv=pow(10,cnt);
+        _conv+=resto*pow(10,cnt);
         cnt++;
+        
     }
     return _conv;
 }
