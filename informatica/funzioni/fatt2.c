@@ -1,13 +1,14 @@
 #include <stdio.h>
-long fattoriale(int _num);
+void fattoriale(int _num);
 int main(){
     int num=0;
-    long fattoriale;
+    long fatt;
     do{
         printf("inserisci un numero: ");
         scanf("%d", &num);
     }while(num<=0);
-    fattoriale=_fattoriale(num);
+    fatt=fattoriale(num);
+    printf("fattoriale è: ",fatt);
 }
 long fattoriale(int _num){
     long sumfat=1;
