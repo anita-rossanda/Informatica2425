@@ -20,7 +20,6 @@ long converti(int _n){
         quoz=quoz/2;
         _conv+=resto*pow(10,cnt);
         cnt++;
-        
     }
     return _conv;
 }
