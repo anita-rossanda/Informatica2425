@@ -17,16 +17,17 @@ int main(){
         printf("inserisci un valore: ");
         scanf("%d",&n);
 
-    }while
-    TriangoloFloyd (&n);
+    }while(n<=0);
+    TriangoloFloyd(&n);
 
 }
 void TriangoloFloyd (int *_num){
-
-    for(int i=1;i<=n;i++){
-        for(int j=0;j<i;J++){
-            
-
+    int cnt=0;
+    for(int i=1;i<=*_num;i++){
+        for(int j=0;j<i;j++){
+            cnt++;
+            printf("%d\t",cnt);
         }
+        printf("\n");
     }
 }
