@@ -4,8 +4,8 @@ ricerca dicotomica/binaria*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "libreria.h"
-#include "libreria.c"
+#include "libArray.h"
+#include "libArray.c"
 #define DIM 100000
 int main(){
     int num=0, vett[DIM], pos=0;
