@@ -29,7 +29,14 @@ int contaOccorrenze(int vettore[], int dim, int valore){
     }
     return cnt;
 }
+void valoriRandom(int vett[], int dim){
+    
+    for(int i=0; i<dim; i++){
+        vett[i]=rand()%100;
+        
 
+    }
+}
 
 int ricercaSequenziale(int *vettore, int dim, int valore){
     for(int i = 0; i<dim; i++){
@@ -75,5 +82,14 @@ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) 
         pos = trovaPosizione(vett, i, num); 
         shiftDx(vett, i, pos);
         vett[pos] = num;
+    }
+}
+
+void scambiaVettore(int vettA[], int vettB[],int dim){
+    int temp=0;
+    for(int i=0; i<dim; i++){
+        temp=vettA[i];
+        vettA[i]=vettB[i];
+        vettB[i]=temp;
     }
 }
