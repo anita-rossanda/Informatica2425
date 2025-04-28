@@ -7,8 +7,9 @@ void stampaVettore(int vettore[], int dim, char sep){
     }
 }
 void caricaVettore(int vettore[],int dim){
+    printf("Inserisci un valore: ");
     for(int i=0; i<dim; i++){
-        printf("Inserisci un valore: ", i);
+        
         scanf("%d", &vettore[i]);
     }
 }
@@ -97,5 +98,18 @@ void scambiaVettore(int vettA[], int vettB[],int dim){
         temp=vettA[i];
         vettA[i]=vettB[i];
         vettB[i]=temp;
+    }
+}
+void caricaBubble(int vett[],int dim){
+    int temp=0;
+    
+    for(int i=0; i<dim-1;i++){
+        for(int j=0; j<dim-i-1;j++){
+            if(vett[j]>vett[j+1]){
+                temp=vett[j];
+                vett[j]=vett[j+1];
+                vett[j+1]=temp;
+            }
+        }
     }
 }
