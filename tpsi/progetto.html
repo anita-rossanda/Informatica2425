@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Arduino: serra automatica</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e2b2d;
+            color: #010100;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #bb7da6;
+            color: #f2c0f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Immagini */
+        .project-image,
+        .materials-image,
+        .difficulty-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Progetto Arduino:serra automatica</h1>
+    </header>
+    
+    <section class="container">
+        <!-- Obiettivi -->
+        <div class="section">
+            <h2>Obiettivi</h2>
+            <p>Il progetto consiste nel creare una serra in cui viene rilevata la temperatura
+                (se troppo alta si accende una ventola per abbassarla), 
+                l’umidità (sensore che misura se la torba è troppo umida o troppo secca)
+                e la luminosità (led che si accendono quando diventa buio all’interno della serra).
+                I seguenti parametri verranno mostrati nel display. 
+                Appena verrà mostrato un parametro nel display che non rispetta le condizioni ideali
+                per l’umidità, verrà segnalato tramite un suono.</p>
+            <img src="led_project.jpg" alt="Immagine del progetto" class="project-image">
+        </div>
+
+        <!-- Materiali utilizzati -->
+        <div class="section">
+            <h2>Materiali Utilizzati: </h2>
+            <ul>
+                <li>1 Arduino </li>
+                <li>resistori</li>
+                <li>buzzer</li>
+                <li>2 led(verde e rosso)</li>
+                <li>altri led di illuminazione</li>
+                <li>cavi</li>
+                <li>display</li>
+                <li>sensore di umidità e temperatura</li>
+                <li>fotoresistore</li>
+                <li>arduino</li>
+                <li>cavo usb</li>
+                <li>breadbord</li>
+            </ul>
+            <img src="materials.jpg" alt="Materiali utilizzati" class="materials-image">
+        </div>
+
+        <!-- Difficoltà Riscontrate -->
+        <div class="section">
+            <h2>Difficoltà Riscontrate</h2>
+            <p>Una delle difficoltà principali è realizzare il circuito sulla breadbord.</p>
+            <img src="difficulty.jpg" alt="Difficoltà riscontrate" class="difficulty-image">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Progetto Arduino </p>
+    </footer>
+</body>
+</html>

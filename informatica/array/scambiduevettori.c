@@ -9,11 +9,13 @@ int main(){
     srand(time(NULL));
     int vettoreA[DIM]={0};
     int vettoreB[DIM]={0};
+
     valoriRandom(vettoreA, DIM);
     stampaVettore(vettoreA, DIM, '.');
     printf("\n");
     valoriRandom(vettoreB, DIM);
     stampaVettore(vettoreB, DIM, '.');
+    
     scambiaVettore(vettoreA, vettoreB, DIM);
     printf("\nscambio i valori dei vettori:\n");
     stampaVettore(vettoreA, DIM, '.');

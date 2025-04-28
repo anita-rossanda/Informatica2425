@@ -6,6 +6,12 @@ void stampaVettore(int vettore[], int dim, char sep){
         printf("%d%c", vettore[i], sep);
     }
 }
+void caricaVettore(int vettore[],int dim){
+    for(int i=0; i<dim; i++){
+        printf("Inserisci un valore: ", i);
+        scanf("%d", &vettore[i]);
+    }
+}
 void riempiVettore(int vettore[], int dim){
     for(int i=0; i<dim; i++){
         printf("inserici l'elemento in posizione di %d: ", i);
