@@ -1,10 +1,11 @@
 /*scambia le diagonali*/
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 #define N 4
 
 void caricaMat(int (*_mat)[N]){
-    printf("Carica matrice: ");
+    printf("Carica matrice: \n");
     for(int i=0; i<N; i++)
         for(int j=0; j<N; j++)
             _mat[i][j]=rand()%30+1;
@@ -34,4 +35,6 @@ int main(){
     stampaMat(matrice);
     //scambio diagonali
     scambioDiag(matrice);
+    //stampa matrice
+    stampaMat(matrice);
 }
