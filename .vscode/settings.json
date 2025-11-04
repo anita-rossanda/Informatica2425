@@ -2,6 +2,7 @@
     "files.associations": {
         "stdio.h": "c",
         "ROSSANDA_ES4.C": "cpp",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "string.h": "c"
     }
 }
