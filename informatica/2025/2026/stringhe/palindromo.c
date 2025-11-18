@@ -4,7 +4,7 @@
 
 typedef char* string;
 
- int lunghezza(string s){
+int lunghezza(string s){
     int i=0;
     while(s[i]!='\0'){
         i++;
