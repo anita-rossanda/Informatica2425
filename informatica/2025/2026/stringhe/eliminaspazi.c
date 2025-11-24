@@ -1,50 +1,30 @@
-/*elimina gli spazi*/
+/* Eliminare gli spazi da una stringa */
+//Data una stringa eliminare gli spazi
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
+#include <stdlib.h>
 
 typedef char* String;
 
-void compatta(String buffer, int len){
-	if(len>0 && buffer[len-1]=='\n'){
-		buffer[len-1]='\0';
-		len--;
-	}
-}
-
-void eliminaSpazi(String frase, int len){
-	int i;
-	int j;
-	for(i=0; frase[i]!='\0'; i++){
-		if(frase[i]==' '){
-			for(j=i; frase[j]!='\0'; j++){
-				frase[j]= frase[j+1];
-			}
+void eliminaSpazi(String s){
+	int i,j;
+	for(i=0; s[i]!='\0'; i++){
+		if (s[i]==' '){
+			for(j=i; s[j] != '\0'; j++){
+				s[j]=s[j+1];
+			}			
+			s[j]='\0';
 		}
 	}
-	
 }
 
+
 int main(){
-	char buffer[200];
-	String frase;
-	int len;
+	String s = (String)malloc (50 * sizeof(char));
+	if (s == NULL) return 1;
 	
-	printf("inserisci una stringa\n");
-	fgets(buffer, sizeof(buffer), stdin);
-	len=strlen(buffer);
-	compatta(buffer, len);
-	frase = (String)malloc((len+1)*sizeof(char));
-	if(frase == NULL){
-		printf("ERRORE\n");
-		return 1;
-	}
-	
-	strcpy(frase, buffer);
-	
-	eliminaSpazi(frase, len);
-	printf("%s", frase);
-	free(frase);
-	return 0;
+	printf("Inserisci una stringa: ");
+	fgets(s, 50, stdin);
+	eliminaSpazi(s);
+	printf("\n%s", s);		
 }
